@@ -26,7 +26,7 @@ def cache_mode():
                 deadline_str = deadline_datetime.strftime('%Y-%m-%d %H:%M:%S')
                 # 根据完成情况分类存储信息
                 if workInfo['完成情况'] == '未完成':
-                    Var.unfinished_work += f"》题目:{workInfo['题目']}\n\t┏完成情况(总/已完成):{workInfo['总题数']}/{workInfo['已完成数']}\n\t┗截止时间:{deadline_str}\n"
+                    Var.unfinished_work += f"》题目:{workInfo['题目']}\n\t┏完成情况(已完成/总):{workInfo['已完成数']}/{workInfo['总题数']}\n\t┗截止时间:{deadline_str}\n"
                 else:
                     Var.finished_work += f"题目：{workInfo['题目']}作业已完成✓\n"
 
