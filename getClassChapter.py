@@ -1,34 +1,14 @@
-import requests
-from urllib.parse import quote
+from getJson import get_json
 from globalVar import Var
+from globalVar import headers_Host
 
 
-
-def get_json():
-    school_name = config['basic']['school_name']
-    headers_Host = school_name + ".yuketang.cn"
-    headers_cookie = config['basic']['cookie']
-    headers_University_Id = config['basic']['school_id']
-    # 目标网站的URL
-    url = "https://xijing.yuketang.cn/mooc-api/v1/lms/learn/course/chapter"
-
-    # 需要发送的请求头
-    headers = {
-        "Host": headers_Host,
-        "Cookie": headers_cookie,
-        "University-Id": headers_University_Id,
-        "Xtbz": "cloud",
-        # 根据需要添加其他头部信息
-    }
-
-    # 如果需要,这里可以添加请求的参数
+def cache_mode(cid):
+    url = f"https://{headers_Host}/mooc-api/v1/lms/learn/course/chapter"
     params = {
-        "cid": Var.cid,
+        "cid": cid
     }
-
-    # 发送GET请求
-    response = requests.get(url, headers=headers, params=params)
-
+    response = get_json(url, params)
     # 检查响应状态码
     if response.status_code == 200:
         # 打印响应的文本内容(假设返回的是JSON)
@@ -37,10 +17,6 @@ def get_json():
     else:
         print("Error:", response.status_code)
 
-
-
-
-def cache_mode():
     Var.classChapter_data = []
     for chapter in Var.classChapter_json["data"]["course_chapter"]:
         for section in chapter["section_leaf_list"]:
@@ -58,4 +34,4 @@ def cache_mode():
                     "score_deadline": section.get("score_deadline")
                 })
 
-    #print(Var.classChapter_data)
+    # print(Var.classChapter_data)
