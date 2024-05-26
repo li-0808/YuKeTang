@@ -1,0 +1,15 @@
+{
+  "basic": {
+    "school_name": "test",
+    "school_id": "",
+    "cookie": ""
+  },
+  "email": {
+    "host": "",
+    "user": "",
+    "password": ""
+  },
+  "other": {
+    "wait_time": ""
+  }
+}
