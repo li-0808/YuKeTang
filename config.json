@@ -1,15 +1,18 @@
 {
   "basic": {
-    "school_name": "test",
-    "school_id": "",
-    "cookie": ""
+    "school_name": "xijing",
+    "school_id": "2679",
+    "cookie": "sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2218bfc7c1199a91-0be09b132c7526-4c657b58-1327104-18bfc7c119a1483%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMThiZmM3YzExOTlhOTEtMGJlMDliMTMyYzc1MjYtNGM2NTdiNTgtMTMyNzEwNC0xOGJmYzdjMTE5YTE0ODMifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22%24device_id%22%3A%2218bfc7c1199a91-0be09b132c7526-4c657b58-1327104-18bfc7c119a1483%22%7D; _ga=GA1.2.1788110392.1714382032; university_id=2679; platform_id=3; xtbz=cloud; platform_type=1; csrftoken=3ayNezJIoaaibE1nayXL83HRlHjliAdb; sessionid=f87cpd9a96n54lfkb0h7b72q9uegrxpw; JG_d651262356d93f6497b466bc1_PV=1716707034437|1716707043191"
   },
   "email": {
-    "host": "",
-    "user": "",
-    "password": ""
+    "sender": "2410419557@qq.com",
+    "receiver": "2859371427@qq.com",
+    "host": "smtp.qq.com",
+    "port": "465",
+    "user": "2410419557@qq.com",
+    "password": "ottftrkinsgmdjja"
   },
   "other": {
-    "wait_time": ""
+    "wait_time": 1
   }
 }
